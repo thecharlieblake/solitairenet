@@ -1,5 +1,5 @@
 # solitairenet
-> Solitaire deep graph learning library.
+> Solitaire deep learning library.
 
 
 This is currently a dummy project which I'm hoping to roll-out into something more substantial!
