@@ -1,6 +1,6 @@
 {
   "solitairenet": {
     "Overview": "/",
-    "module name here": "core.html"
+    "game": "game.html"
   }
 }
