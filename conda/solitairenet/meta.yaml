@@ -1,0 +1,34 @@
+package:
+  name: solitairenet
+  version: 0.0.26
+source:
+  sha256: a0149c2737ab5280d09d703d198cac415783632aba3cb36cd44b686473389e89
+  url: https://files.pythonhosted.org/packages/cc/c1/92196315f84cc8b8bd29bd142764ee0e11a0532cb78321dc15aa527530bd/solitairenet-0.0.26.tar.gz
+about:
+  dev_url: https://thecharlieblake.github.io
+  doc_url: https://thecharlieblake.github.io
+  home: https://thecharlieblake.github.io
+  license: Apache Software
+  license_family: APACHE
+  summary: Solitaire deep learning library
+build:
+  noarch: python
+  number: '0'
+  script: '{{ PYTHON }} -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - thecharlieblake
+requirements:
+  host:
+  - pip
+  - python
+  - packaging
+  - numpy
+  run:
+  - pip
+  - python
+  - packaging
+  - numpy
+test:
+  imports:
+  - solitairenet

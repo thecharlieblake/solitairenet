@@ -25,6 +25,7 @@ release: pypi conda_release
 	nbdev_bump_version
 
 conda_release:
+	anaconda login
 	fastrelease_conda_package
 
 pypi: dist

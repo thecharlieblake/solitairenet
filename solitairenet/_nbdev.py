@@ -2,9 +2,11 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"win": "game.ipynb"}
+index = {"win": "game.ipynb",
+         "lose": "game.ipynb",
+         "KingAlbert": "game.ipynb"}
 
-modules = ["core.py"]
+modules = ["game.py"]
 
 doc_url = "https://thecharlieblake.github.io/solitairenet/"
 

@@ -26,6 +26,59 @@ nb_path: "game.ipynb"
     
 <div class="cell border-box-sizing code_cell rendered">
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>test
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
+<span class="o">%</span><span class="k">autoreload</span> 2
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>test
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -40,9 +93,34 @@ nb_path: "game.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="win" class="doc_header"><code>win</code><a href="https://github.com/thecharlieblake/solitairenet/tree/master/solitairenet/core.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>win</code>(<strong><code>player</code></strong>)</p>
+<h4 id="win" class="doc_header"><code>win</code><a href="https://github.com/thecharlieblake/solitairenet/tree/master/solitairenet/game.py#L10" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>win</code>(<strong><code>player</code></strong>)</p>
 </blockquote>
 <p>Print win message</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="lose" class="doc_header"><code>lose</code><a href="https://github.com/thecharlieblake/solitairenet/tree/master/solitairenet/game.py#L14" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>lose</code>(<strong><code>player</code></strong>)</p>
+</blockquote>
+<p>Print loss message</p>
 
 </div>
 
@@ -94,12 +172,6 @@ nb_path: "game.ipynb"
 </div>
     {% endraw %}
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Example-Heading">Example Heading<a class="anchor-link" href="#Example-Heading"> </a></h2>
-</div>
-</div>
-</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -111,6 +183,147 @@ nb_path: "game.ipynb"
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="KingAlbert" class="doc_header"><code>class</code> <code>KingAlbert</code><a href="https://github.com/thecharlieblake/solitairenet/tree/master/solitairenet/game.py#L19" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>KingAlbert</code>(<strong><code>player</code></strong>, <strong><code>status</code></strong>=<em><code>True</code></em>)</p>
+</blockquote>
+<p>A game of King Albert for player <code>player</code>, using <a href="/solitairenet/game.html#win"><code>win</code></a> and <a href="/solitairenet/game.html#lose"><code>lose</code></a></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="KingAlbert.final_msg" class="doc_header"><code>KingAlbert.final_msg</code><a href="https://github.com/thecharlieblake/solitairenet/tree/master/solitairenet/game.py#L25" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>KingAlbert.final_msg</code>()</p>
+</blockquote>
+<p>Find out if you've won or lost</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">game</span> <span class="o">=</span> <span class="n">KingAlbert</span><span class="p">(</span><span class="s2">&quot;Jenny&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="n">game</span><span class="o">.</span><span class="n">final_msg</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;Jenny has lost!&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">game</span> <span class="o">=</span> <span class="n">KingAlbert</span><span class="p">(</span><span class="s2">&quot;Bar&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">game</span><span class="o">.</span><span class="n">final_msg</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;Bar has won!&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev.export</span> <span class="kn">import</span> <span class="n">notebook2script</span><span class="p">;</span> <span class="n">notebook2script</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Converted game.ipynb.
+Converted index.ipynb.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
