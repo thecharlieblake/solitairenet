@@ -3,8 +3,7 @@
 __all__ = ['win', 'lose', 'KingAlbert']
 
 # Cell
-print("test")
-import numpy as           np
+import numpy as np
 
 # Cell
 def win(player):
